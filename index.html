@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="" />
+		<meta name="author" content="" />
+		<title>Simple Sidebar - Start Bootstrap Template</title>
+		<!-- Favicon-->
+		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<!-- Core theme CSS (includes Bootstrap)-->
+		<link href="css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="d-flex" id="wrapper">
+			<!-- Sidebar-->
+			<div class="border-end bg-white" id="sidebar-wrapper">
+				<div class="sidebar-heading border-bottom bg-light">Tamil Parser</div>
+				<div class="list-group list-group-flush">
+					<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Parts of Speech</a>
+					<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Shortcuts</a>
+					<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Overview</a>
+					<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Events</a>
+					<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Profile</a>
+					<a class="list-group-item list-group-item-action list-group-item-light p-3" href="#!">Status</a>
+				</div>
+			</div>
+			<!-- Page content wrapper-->
+			<div id="page-content-wrapper">
+				<!-- Top navigation-->
+				<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+					<div class="container-fluid">
+						<button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+								<li class="nav-item active"><a class="nav-link" href="#!">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="#!">Link</a></li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+									<div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item" href="#!">Action</a>
+										<a class="dropdown-item" href="#!">Another action</a>
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item" href="#!">Something else here</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+				<!-- Page content-->
+				<div class="container-fluid">
+					<h1 class="mt-4">TAMIL TREEBANK GUIDELINES</h1>
+					<table class="table">
+						<thead>
+							<tr class="table-info">
+								<th scope="col"></th>
+								<th scope="col">Nominals</th>
+								<th scope="col">Clauses</th>
+								<th scope="col">Modifier Words</th>
+								<th scope="col">Function words </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"><a href="#coreargs">Core arguments</a></th>
+								<td><a href="#nsubj">nsubj</a>, <a href="#obj">obj</a>, <a href="#iobj">iobj</a></td>
+								<td>csubj, ccomp, xcomp</td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<th scope="row">Non-core dependents</th>
+								<td>obl, vocative, dislocated</td>
+								<td>advcl</td>
+								<td>advmod, discourse</td>
+								<td>aux, cop, mark </td>
+							</tr>
+							<tr>
+								<th scope="row">Nominal dependents</th>
+								<td>nmod, appos, nummod</td>
+								<td>acl</td>
+								<td>amod</td>
+								<td> </td>
+							</tr>
+							<tr class="table-info">
+								<th scope="row">Coordination</th>
+								<td>MWE</td>
+								<td>Loose</td>
+								<td>Special</td>
+								<td> Other</td>
+							</tr>
+							<tr>
+								<th scope="row">conj, cc</th>
+								<td>fixed, flat, compound</td>
+								<td>list, parataxis</td>
+								<td>orphan, goeswith</td>
+								<td> punct, root, dep </td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 id="coreargs">Core arguments</h3>
+					<h4 id="nsubj">nsubj</h4>
+					<p>
+						A nominal subject (nsubj) is a nominal which is the syntactic subject and the proto-agent of a clause. That is, it is in the position that passes a typical grammatical test for subjecthood, and this argument is the more agentive, the do-er, or the proto-agent of the clause.
+					</p>
+					<ul>
+						<li><h5>1.1 nsubj in nominative case</h5></li>
+						<ol>
+							<li>
+								<h3>என் பையன்கள் வந்தார்கள் .</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.1.png"></img>
+								<p>
+									However, when the predicate indicates the capabilitative mood, the subject is optionally marked for the Instrumental case marker and the verb gets default agreement i.e. third person-neuter
+								</p>
+							</li>
+							<li>
+								<h3>நான் இந்த வேலையைச் செய்ய முடியும் .</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.1-2.png"></img>
+							</li>
+							<li>
+								<h3>என்னால் இந்த வேலையைச் செய்ய முடியும் .</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.1-3.png"></img>
+								<p>
+									The head of nsubj is not  always a verb in Tamil when the nominal and adjectival predicates occur optionally with the copula verb ‘ஆகு‘. In such cases non-verbal predicates are considered as head (i.e. root) and the copula verb if it is present is related as aux (auxiliary) to the root.
+								</p>
+							</li>
+							<li>
+								<h3>குமார் மாணவன் .</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.1-4.png"></img>
+							</li>
+							<li>
+								<h3>குமார் மாணவன் ஆவான்</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.1-5.png"></img>
+								<p>
+									Certain predicates require their nsubj to be case-marked by non-nominative case markers such as the dative, locative and instrumental markers (like in (3)) in Tamil.
+								</p>
+							</li>
+						</ol>
+						<li><h5>1.2 ‘nsubj’ in Dative Subject Constructions:</h5></li>
+						<p>
+							The dative marked subject acts as an experiencer subject and the verb agrees with the object. In Tamil, stative predicates expressing the notion of mental, emotional and physical experience require the case marking pattern of DAT-ACC (Lehmann, 1993:180).
+						</p>
+						<ul>
+							<li>
+								<h5>1.2.1 Verbs of mental experience</h5>
+								<p>
+									When the verbs such as தெரி (teri) ‘know’ and புரி (puri) ‘understand’ in Tamil, the logical subject is marked with the dative case marker. Note: there is a <b>default agreement</b> with the verb.
+								</p>
+								<h3> எனக்கு அவனைத்  தெரியும் .</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.2.1-1.png"></img>
+							</li>
+							<li>
+								<h5>1.2.2 Verbs of emotional experience</h5>
+								<p>
+									Verbs like பிடி (piti) (tr.) ‘like’ etc., in Tamil express emotional experience with the dative-marked subject in Tamil.
+								</p>
+								<h3> எனக்கு அவனைப் பிடிக்கும் .</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.2.2-1.png"></img>
+							</li>
+							<li>
+								<h5>Verbs of psycho-semantic, physical and physiological experiences</h5>
+								<p>
+									Verbs such as பசி (paci) ‘be hungry’, வலி (vali) ‘be painful’, and அரி (ari) ‘be itching’ in Tamil conveys psycho-semantic, physical and physiological experiences and requires their subject with the dative marker.
+								</p>
+								<h3>  எனக்கு பசிக்கிறது .</h3>
+								<img class="img-fluid" alt="nsubj in nominative case" src="images/1.2.3-1.png"></img>
+							</li>
+						</ul>
+						<li>
+							<h4>1.3 ‘nsubj’ in Instrumental Subject Constructions</h4>
+							<h3>என்னால் இந்த வேலையைச் செய்ய முடியும்.</h3>
+							<img class="img-fluid" alt="nsubj in Instrumental Subject Constructions" src="images/1.3-1.png"></img>
+						</li>
+						<li>
+							<h4>1.4 ‘nsubj’ in Passive Construction (nsubj:pass)</h4>
+							<p>
+								A passive nominal subject is a noun phrase which is the syntactic subject of a passive clause.
+							</p>
+							<h3>ரவியால் இந்த புத்தகம் எழுதப்பட்டது.</h3>
+							<img class="img-fluid" alt="nsubj in Instrumental Subject Constructions" src="images/1.4-1.png"></img>
+						</li>
+						<li id="iobj">
+							<h4>iobj: indirect object</h4>
+							<p>
+								The noun phrase which is the recipient of a ditransitive verb i.e. indirect object is marked as iobj.
+							</p>
+							<h3>குமார் அப்பாவுக்கு ஒரு கடிதம் கொடுத்தான் .</h3>
+							<img class="img-fluid" alt="nsubj in Instrumental Subject Constructions" src="images/iobj.png"></img>
+						</li>
+						<li id="csubj">
+							<h4>csubj: clausal subject</h4>
+							<p>
+								When the subject is realized as a clause, it is marked as csubj. The root of the sentence can be either verb or noun in case of copular construction.
+							</p>
+							<h3>ரவி தவறு செய்தது என்னைப் புண்படுத்தியது</h3>
+							<img class="img-fluid" alt="nsubj in Instrumental Subject Constructions" src="images/csubj1.png"></img>
+							<h3>குமார் வந்தது நல்லது. </h3>
+							<img class="img-fluid" alt="nsubj in Instrumental Subject Constructions" src="images/csubj2.png"></img>
+						</li>
+						<li id="ccomp">
+							<h4>ccomp: clausal complement</h4>
+							<p>
+								When the object is realized as a clause,  it is marked as ccomp. 
+							</p>
+							<h3>ரவி சீதா வருவதைப் பார்த்தான் </h3>
+							<p>This is also ccomp, and comp is marked by the வருவதை it self. For the below two examples, it is marked externally.</p>
+							<img class="img-fluid" alt="nsubj in Instrumental Subject Constructions" src="images/ccomp1.png"></img>
+							<p>In certain cases, the complementizer (i.e mark) links the clausal object with the root. </p>
+							<img class="img-fluid" alt="nsubj in Instrumental Subject Constructions" src="images/ccomp1.png"></img>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- Bootstrap core JS-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Core theme JS-->
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
